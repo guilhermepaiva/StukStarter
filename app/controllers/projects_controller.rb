@@ -5,7 +5,7 @@
 #  id               :integer          not null, primary key
 #  user_id          :integer
 #  name             :string
-#  short_descripion :text
+#  short_description :text
 #  description      :text
 #  image_url        :string
 #  status           :string           default("pending")
@@ -15,10 +15,11 @@
 #  updated_at       :datetime         not null
 #
 
-require 'test_helper'
+class ProjectsController < ApplicationController
+	def index
+		@projects = Project.all
+		@displayed_projects = Project.take(4)
+	end
 
-class ProjectTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+	
 end

@@ -29,6 +29,8 @@ gem "font-awesome-rails"
 
 gem 'devise'
 
+gem 'annotate', github: 'ctran/annotate_models'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

@@ -11,19 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160523171619) do
+ActiveRecord::Schema.define(version: 20160524183725) do
 
   create_table "projects", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "name"
-    t.text     "short_descripion"
+    t.text     "short_description"
     t.text     "description"
     t.string   "image_url"
-    t.string   "status",                                   default: "pending"
-    t.decimal  "goal",             precision: 8, scale: 2
+    t.string   "status",                                    default: "pending"
+    t.decimal  "goal",              precision: 8, scale: 2
     t.datetime "expiration_time"
-    t.datetime "created_at",                                                   null: false
-    t.datetime "updated_at",                                                   null: false
+    t.datetime "created_at",                                                    null: false
+    t.datetime "updated_at",                                                    null: false
   end
 
   add_index "projects", ["user_id"], name: "index_projects_on_user_id"

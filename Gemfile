@@ -31,6 +31,11 @@ gem 'devise'
 
 gem 'annotate', github: 'ctran/annotate_models'
 
+gem 'simple_form'
+
+# Wysiwyg Bootstrap
+gem 'bootstrap-wysihtml5-rails', github: 'nerian/bootstrap-wysihtml5-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
